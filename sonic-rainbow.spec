@@ -33,13 +33,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Sonic-Rainbow is a graphical multi-media player for Linux. It supports
-audio formats like mp3, wav and ogg , it also can play dvd and rip cd
-audio to mp3.
+audio formats like MP3, wav and ogg , it also can play dvd and rip cd
+audio to MP3.
 
 %description -l pl
 Sonic-Rainbow jest graficznym odtwarzaczem plików multimedialnych.
-Obs³uguje formaty muzyczne takie jak mp3, wav czy ogg. Potrafi tak¿e
-odtwarzaæ filmy dvd oraz zrzucaæ pliki cd audio do formatu mp3.
+Obs³uguje formaty muzyczne takie jak MP3, wav czy ogg. Potrafi tak¿e
+odtwarzaæ filmy dvd oraz zrzucaæ pliki cd audio do formatu MP3.
 
 %prep
 %setup -q -n %{name}
