@@ -20,7 +20,7 @@ BuildRequires:	libvorbis-devel >= 1.0
 BuildRequires:  libmad-devel >= 0.14
 BuildRequires:  libid3tag-devel
 BuildRequires:  xine-lib-devel > 1.0.0
-BuildRequires:  audiofile-devel > 0.2.4
+BuildRequires:  audiofile-devel > 1:0.2.4
 BuildRequires:	gtk+ >= 1.2.0
 BuildRequires:	libao >= 0.8
 BuildRequires:	libcddb >= 0.9.4
