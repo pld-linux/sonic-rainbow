@@ -18,8 +18,8 @@ BuildRequires:	libao-devel >= 0.8
 BuildRequires:	libcddb-devel >= 0.9.4
 BuildRequires:	libid3tag-devel
 BuildRequires:	libmad-devel >= 0.14
-BuildRequires:	libogg-devel >= 1.0
-BuildRequires:	libvorbis-devel >= 1.0
+BuildRequires:	libogg-devel >= 2:1.0
+BuildRequires:	libvorbis-devel >= 1:1.0
 BuildRequires:	xine-lib-devel > 1.0.0
 Requires:	audiofile > 0.2.4
 Requires:	gtk+ >= 1.2.0
