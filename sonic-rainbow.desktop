@@ -7,5 +7,5 @@ Icon=sonic-rainbow.xpm
 Exec=sonic-rainbow
 Terminal=false
 Type=Application
-Categories=Multimedia;Player;
+Categories=GTK;Multimedia;Player;
 # vi: encoding=utf-8
