@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=sonic-rainbow
+Comment=sonic-rainbow is a graphical multi-media player for Linux.
+Comment[pl]=sonic-rainbow jest graficznym odtwarzaczem plików multimedialnych.
+Icon=sonic-rainbow.xpm 
+Exec=sonic-rainbow
+Terminal=false
+Type=Application
+Categories=Application;Multimedia;
