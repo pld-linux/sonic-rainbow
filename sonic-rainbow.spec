@@ -17,22 +17,19 @@ BuildRequires:	libao-devel >= 0.8
 BuildRequires:	libcddb-devel >= 0.9.4
 BuildRequires:	libogg-devel >= 1.0
 BuildRequires:	libvorbis-devel >= 1.0
-BuildRequires:  libmad-devel >= 0.14
-BuildRequires:  libid3tag-devel
-BuildRequires:  xine-lib-devel > 1.0.0
-BuildRequires:  audiofile-devel > 1:0.2.4
+BuildRequires:	libmad-devel >= 0.14
+BuildRequires:	libid3tag-devel
+BuildRequires:	xine-lib-devel > 1.0.0
+BuildRequires:	audiofile-devel > 1:0.2.4
 BuildRequires:	gtk+ >= 1.2.0
 BuildRequires:	libao >= 0.8
 BuildRequires:	libcddb >= 0.9.4
 BuildRequires:	libogg >= 1.0
 BuildRequires:	libvorbis >= 1.0
-BuildRequires:  libmad >= 0.14
-BuildRequires:  libid3tag
-BuildRequires:  xine-lib > 1.0.0
-BuildRequires:  audiofile > 0.2.4
-
-
-
+BuildRequires:	libmad >= 0.14
+BuildRequires:	libid3tag
+BuildRequires:	xine-lib > 1.0.0
+BuildRequires:	audiofile > 0.2.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -49,15 +46,15 @@ odtwarzaæ filmy dvd oraz zrzucaæ pliki cd audio do formatu mp3.
 %setup -q -n %{name}
 
 %build
-%{__aclocal}                                                                    
-%{__autoconf}                                                                   
-%{__automake}  
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
 %install
-rm -rf $RPM_BUILD_ROOT                                                          
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Multimedia}  
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Multimedia}
 install src/sonic-rainbow $RPM_BUILD_ROOT%{_bindir}/sonic-rainbow
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Multimedia 
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir} 
@@ -66,8 +63,8 @@ install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644,root,root,755)                                                     
+%defattr(644,root,root,755)
 %doc doc/Sonic-Rainbow.html AUTHORS NEWS README INSTALL
-%attr(755,root,root) %{_bindir}/*                                               
-%{_applnkdir}/Multimedia/%{name}.desktop                                        
+%attr(755,root,root) %{_bindir}/*
+%{_applnkdir}/Multimedia/%{name}.desktop
 %{_pixmapsdir}/sonic-rainbow.xpm 
