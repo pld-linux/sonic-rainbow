@@ -1,0 +1,24 @@
+diff -urbB sonic-rainbow.org/src/cdplayer.c sonic-rainbow/src/cdplayer.c
+--- sonic-rainbow.org/src/cdplayer.c	2004-08-31 23:41:27.000000000 +0200
++++ sonic-rainbow/src/cdplayer.c	2005-10-08 21:52:55.980773500 +0200
+@@ -474,7 +474,7 @@
+ {
+   for(i=1;i<matches;i++)
+   {
+-   if(id==disc->discid)break;
++   if(id==cddb_disc_get_discid(disc))break;
+    back=cddb_query_next(conn,disc);
+    }
+ 
+diff -urbB sonic-rainbow.org/src/cdripper.c sonic-rainbow/src/cdripper.c
+--- sonic-rainbow.org/src/cdripper.c	2004-08-31 23:41:27.000000000 +0200
++++ sonic-rainbow/src/cdripper.c	2005-10-08 21:55:04.596811500 +0200
+@@ -976,7 +976,7 @@
+ {
+ for(i=1;i<matches;i++)
+ {
+-if(id==disc->discid)break;
++if(id==cddb_disc_get_discid(disc))break;
+ back=cddb_query_next(conn,disc);
+ }
+ 
