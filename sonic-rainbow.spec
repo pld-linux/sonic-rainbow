@@ -1,19 +1,21 @@
 Summary:	Sonic-Rainbow - a graphical multi-media player for Linux
 Summary(pl):	Sonic-Rainbow - graficzny odtwarzacz plików multimedialnych
 Name:		sonic-rainbow
-Version:	0.4.0
-Release:	3
+Version:	0.7.2.2
+Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-BETA-%{version}.tar.gz
-# Source0-md5:	3554516ce325469cbcb62259c0e1bcf9
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-ALPHA-%{version}.tar.gz
+# Source0-md5:	ee0bf129b9943a06acc66b7b155af0b2
 Source1:	%{name}.desktop
 Source2:	%{name}.xpm
+Patch0:		%{name}-cddb.patch
 URL:		http://sonic-rainbow.sourceforge.net/
 BuildRequires:	audiofile-devel > 1:0.2.4
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	id3lib-devel
 BuildRequires:	libao-devel >= 0.8
 BuildRequires:	libcddb-devel >= 0.9.4
 BuildRequires:	libid3tag-devel
@@ -43,6 +45,7 @@ odtwarzaæ filmy dvd oraz zrzucaæ pliki cd audio do formatu MP3.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 %{__aclocal}
