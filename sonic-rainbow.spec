@@ -5,7 +5,7 @@ Version:	0.7.2.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-ALPHA-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/sonic-rainbow/%{name}-ALPHA-%{version}.tar.gz
 # Source0-md5:	ee0bf129b9943a06acc66b7b155af0b2
 Source1:	%{name}.desktop
 Source2:	%{name}.xpm
