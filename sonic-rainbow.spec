@@ -1,5 +1,5 @@
 Summary:	Sonic-Rainbow - a graphical multi-media player for Linux
-Summary(pl.UTF-8):   Sonic-Rainbow - graficzny odtwarzacz plików multimedialnych
+Summary(pl.UTF-8):	Sonic-Rainbow - graficzny odtwarzacz plików multimedialnych
 Name:		sonic-rainbow
 Version:	0.7.2.2
 Release:	1
