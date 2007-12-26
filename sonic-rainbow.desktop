@@ -1,9 +1,8 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Sonic-Rainbow
 Comment=Graphical multimedia player
 Comment[pl]=Graficzny odtwarzacz plików multimedialnych
-Icon=sonic-rainbow.xpm 
+Icon=sonic-rainbow 
 Exec=sonic-rainbow
 Terminal=false
 Type=Application
