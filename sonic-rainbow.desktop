@@ -6,5 +6,5 @@ Icon=sonic-rainbow
 Exec=sonic-rainbow
 Terminal=false
 Type=Application
-Categories=GTK;Multimedia;Player;
+Categories=GTK;AudioVideo;Player;
 # vi: encoding=utf-8
